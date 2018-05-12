@@ -142,7 +142,7 @@ public class MainActivity extends BaseActivity {
             //requestApiByRetrofit(msg);
 
             // 使用 Retrofit 和 RxJava 请求接口
-            //requestApiByRetrofit_RxJava(msg);
+            requestApiByRetrofit_RxJava(msg);
         }
     }
 
