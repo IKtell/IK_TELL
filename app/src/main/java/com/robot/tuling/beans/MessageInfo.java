@@ -1,9 +1,12 @@
 package com.robot.tuling.beans;
 
+import android.support.annotation.NonNull;
+
 import java.io.Serializable;
 import java.util.Date;
 
-public class MessageInfo implements Serializable {
+
+public class MessageInfo implements Comparable, Serializable {
     public String data;
 
     public String likeNum;
@@ -38,5 +41,13 @@ public class MessageInfo implements Serializable {
     
     public Date getDate(){
         return date;
+    }
+
+    @Override
+    public int compareTo(@NonNull Object o) {
+        MessageInfo s = (MessageInfo) (o);
+        int result = 0;
+        result = (int) (this.getDate().getDate()- s.getDate().getDate());
+        return result;
     }
 }

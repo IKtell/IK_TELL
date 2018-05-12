@@ -13,11 +13,11 @@ INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app
 INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
 MERGED from [com.android.support:design:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/7d8ad4102cff51c5971d7cf13db80587/AndroidManifest.xml:17:1-22:12
 MERGED from [com.afollestad.material-dialogs:core:0.9.4.4] /home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/AndroidManifest.xml:2:1-15:12
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:17:1-22:12
 MERGED from [com.lguipeng.bubbleview:library:1.0.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/2e0d48fa7d96a1d6303d0d83a9b678aa/AndroidManifest.xml:2:1-16:12
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:2:1-37:12
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/f31116614e96cf457c42ce609833b8bc/AndroidManifest.xml:6:1-16:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a2fed1bc9f67c6f99fff18f99c69dd45/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v13:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/e3729593ef6fe64eab486565f1a2529e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2b14a7a01333c68f02ed115dcf000825/AndroidManifest.xml:17:1-22:12
@@ -184,6 +184,16 @@ activity#com.robot.tuling.ui.CameraActivity
 ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:55:9-61:20
 	android:name
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:55:19-52
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:56:13-60:29
+action#android.intent.action.MAIN
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:57:17-69
+	android:name
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:57:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:59:17-77
+	android:name
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:59:27-74
 activity#com.robot.tuling.ui.AboutActivity
 ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:62:9-64:52
 	android:screenOrientation
@@ -214,16 +224,6 @@ activity#com.robot.tuling.ui.SendBoxActivity
 ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:73:9-79:20
 	android:name
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:73:19-53
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:74:13-78:29
-action#android.intent.action.MAIN
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:75:17-69
-	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:75:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:77:17-77
-	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:77:27-74
 uses-sdk
 INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml
@@ -232,8 +232,6 @@ MERGED from [com.android.support:design:27.0.2] /home/patrick/.gradle/caches/tra
 MERGED from [com.android.support:design:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/7d8ad4102cff51c5971d7cf13db80587/AndroidManifest.xml:20:5-44
 MERGED from [com.afollestad.material-dialogs:core:0.9.4.4] /home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/AndroidManifest.xml:8:5-11:75
 MERGED from [com.afollestad.material-dialogs:core:0.9.4.4] /home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/AndroidManifest.xml:8:5-11:75
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:20:5-44
 MERGED from [com.lguipeng.bubbleview:library:1.0.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/2e0d48fa7d96a1d6303d0d83a9b678aa/AndroidManifest.xml:7:5-9:41
 MERGED from [com.lguipeng.bubbleview:library:1.0.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/2e0d48fa7d96a1d6303d0d83a9b678aa/AndroidManifest.xml:7:5-9:41
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:7:5-9:41
@@ -242,6 +240,8 @@ MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.0] /home/patric
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/f31116614e96cf457c42ce609833b8bc/AndroidManifest.xml:12:5-14:41
 MERGED from [com.android.support:appcompat-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a2fed1bc9f67c6f99fff18f99c69dd45/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a2fed1bc9f67c6f99fff18f99c69dd45/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v13:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/e3729593ef6fe64eab486565f1a2529e/AndroidManifest.xml:20:5-44

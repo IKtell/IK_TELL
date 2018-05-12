@@ -9,7 +9,6 @@ import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
-import android.widget.TextView;
 import butterknife.Unbinder;
 import butterknife.internal.DebouncingOnClickListener;
 import butterknife.internal.Utils;
@@ -33,12 +32,6 @@ public class SendBoxActivity_ViewBinding implements Unbinder {
 
     View view;
     target.toolbar = Utils.findRequiredViewAsType(source, R.id.toolbar, "field 'toolbar'", Toolbar.class);
-    target.message = Utils.findRequiredViewAsType(source, R.id.message, "field 'message'", TextView.class);
-    target.divider = Utils.findRequiredView(source, R.id.divider, "field 'divider'");
-    target.commentNum = Utils.findRequiredViewAsType(source, R.id.comment_num, "field 'commentNum'", TextView.class);
-    target.comment = Utils.findRequiredViewAsType(source, R.id.comment, "field 'comment'", ImageView.class);
-    target.likeNum = Utils.findRequiredViewAsType(source, R.id.like_num, "field 'likeNum'", TextView.class);
-    target.like = Utils.findRequiredViewAsType(source, R.id.like, "field 'like'", ImageView.class);
     view = Utils.findRequiredView(source, R.id.iv_send_msg, "field 'ivSendMsg' and method 'onViewClicked'");
     target.ivSendMsg = Utils.castView(view, R.id.iv_send_msg, "field 'ivSendMsg'", ImageView.class);
     view2131296372 = view;
@@ -62,12 +55,6 @@ public class SendBoxActivity_ViewBinding implements Unbinder {
     this.target = null;
 
     target.toolbar = null;
-    target.message = null;
-    target.divider = null;
-    target.commentNum = null;
-    target.comment = null;
-    target.likeNum = null;
-    target.like = null;
     target.ivSendMsg = null;
     target.ivSendBox = null;
     target.etMsg = null;
