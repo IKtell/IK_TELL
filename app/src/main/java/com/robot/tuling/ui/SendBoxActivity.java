@@ -66,6 +66,9 @@ public class SendBoxActivity extends AppCompatActivity {
 
     private UserSendTask mAuthTask;
 
+    private RecyclerView recyclerView;
+    private MessageAdapter messageAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -73,10 +76,10 @@ public class SendBoxActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         TAG = "CHECK";
-        RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
+        recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        MessageAdapter messageAdapter = new MessageAdapter(mMessageInfoList);
+        messageAdapter = new MessageAdapter(mMessageInfoList);
         recyclerView.setAdapter(messageAdapter);
     }
 
@@ -152,6 +155,8 @@ public class SendBoxActivity extends AppCompatActivity {
                         e.printStackTrace();
                     }
                     etMsg.setText("");
+                    //===
+                    messageAdapter.notifyItemInserted(messageAdapter.getItemCount() - 1);
                 }
                 else{
     //                Toast.makeText(this, "failed", Toast.LENGTH_LONG).show();

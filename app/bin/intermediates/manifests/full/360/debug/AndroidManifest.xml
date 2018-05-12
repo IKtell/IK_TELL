@@ -73,6 +73,7 @@
             android:screenOrientation="portrait" />
         <activity android:name="com.robot.tuling.ui.ChooseRoleActivity" />
         <activity android:name="com.robot.tuling.ui.SkillPointsActivity" />
+        <activity android:name="com.robot.tuling.ui.CardActivity" />
         <activity android:name="com.robot.tuling.ui.SendBoxActivity" >
 
             <!-- <intent-filter> -->

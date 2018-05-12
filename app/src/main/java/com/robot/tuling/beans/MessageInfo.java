@@ -9,11 +9,11 @@ import java.util.Date;
 public class MessageInfo implements Comparable, Serializable {
     public String data;
 
-    public String likeNum;
+    private String likeNum;
 
-    public String commentNum;
+    private String commentNum;
 
-    public String uuid;
+    private String uuid;
 
     public Date date;
 
@@ -49,5 +49,9 @@ public class MessageInfo implements Comparable, Serializable {
         int result = 0;
         result = (int) (this.getDate().getDate()- s.getDate().getDate());
         return result;
+    }
+
+    public String getUuid() {
+        return uuid;
     }
 }

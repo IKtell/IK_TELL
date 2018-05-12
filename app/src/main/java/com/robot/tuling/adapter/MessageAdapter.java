@@ -1,5 +1,6 @@
 package com.robot.tuling.adapter;
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -7,7 +8,9 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.robot.tuling.R;
+import com.robot.tuling.base.BaseActivity;
 import com.robot.tuling.beans.MessageInfo;
+import com.robot.tuling.ui.CardActivity;
 
 import java.util.List;
 
@@ -23,11 +26,18 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
 
         TextView commentNum;
 
+        private View itemView;
+
         public ViewHolder(View itemView) {
             super(itemView);
             data = (TextView) itemView.findViewById(R.id.message_data);
             likeNum = (TextView) itemView.findViewById(R.id.like_num);
             commentNum = (TextView) itemView.findViewById(R.id.comment_num);
+            this.itemView = itemView;
+        }
+
+        public View getItemView() {
+            return itemView;
         }
     }
 
@@ -50,6 +60,14 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         holder.data.setText(messageInfo.getData());
         holder.commentNum.setText(messageInfo.getCommentNum());
         holder.likeNum.setText(messageInfo.getLikeNum());
+        holder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(BaseActivity.appContext, CardActivity.class);
+                intent.putExtra("msgInfo", mMessageInfoList.get(position));
+                BaseActivity.appContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
