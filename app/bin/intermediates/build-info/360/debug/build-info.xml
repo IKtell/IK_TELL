@@ -5,24 +5,23 @@
     build-mode="COLD"
     density="xxxhdpi"
     format="10"
-    ir-eligibility="COMPATIBLE"
     plugin-version="3.1.2"
-    timestamp="1526130984563"
+    timestamp="1526141161069"
     token="-7087898121510180804"
-    verifier="COLD_SWAP_REQUESTED" >
+    verifier="METHOD_DELETED" >
 
     <task
         name="javac"
-        duration="2830" />
+        duration="3210" />
     <task
         name="instant-run-dex"
         duration="0" />
     <task
         name="instant-run-transform"
-        duration="13" />
+        duration="45" />
     <task
         name="verifier"
-        duration="3" />
+        duration="7" />
 
     <artifact
         location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_4.apk"
@@ -30,14 +29,8 @@
 
     <build
         build-mode="FULL"
-        timestamp="1526127639226"
+        timestamp="1526139531559"
         verifier="FULL_BUILD_REQUESTED" >
-        <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_4.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_7.apk"
-            type="SPLIT" />
         <artifact
             location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\resources\instant-run\360\debug\resources-360-debug.apk"
             type="SPLIT" />
@@ -45,28 +38,34 @@
             location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_1.apk"
             type="SPLIT" />
         <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\dep\dependencies.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_2.apk"
+            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_0.apk"
             type="SPLIT" />
         <artifact
             location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_3.apk"
             type="SPLIT" />
         <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_9.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_5.apk"
-            type="SPLIT" />
-        <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_8.apk"
+            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_2.apk"
             type="SPLIT" />
         <artifact
             location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_6.apk"
             type="SPLIT" />
         <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_0.apk"
+            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_7.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_5.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_4.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_8.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_9.apk"
+            type="SPLIT" />
+        <artifact
+            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\dep\dependencies.apk"
             type="SPLIT" />
         <artifact
             location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\instant-run-apk\360\debug\app-360-debug.apk"
@@ -74,26 +73,8 @@
     </build>
     <build
         build-mode="COLD"
-        ir-eligibility="FIELD_ADDED"
-        timestamp="1526130077952"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_1.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        timestamp="1526130523323"
-        verifier="COLD_SWAP_REQUESTED" >
-        <artifact
-            location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\resources\instant-run\360\debug\resources-360-debug.apk"
-            type="SPLIT" />
-    </build>
-    <build
-        build-mode="COLD"
-        ir-eligibility="COMPATIBLE"
-        timestamp="1526130984563"
-        verifier="COLD_SWAP_REQUESTED" >
+        timestamp="1526141161069"
+        verifier="METHOD_DELETED" >
         <artifact
             location="D:\AndroidStudioProjects\IK_TELL\app\bin\intermediates\split-apk\360\debug\slices\slice_4.apk"
             type="SPLIT" />

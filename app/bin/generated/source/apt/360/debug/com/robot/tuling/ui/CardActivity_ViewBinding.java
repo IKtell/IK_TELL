@@ -3,6 +3,7 @@ package com.robot.tuling.ui;
 
 import android.support.annotation.CallSuper;
 import android.support.annotation.UiThread;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import butterknife.Unbinder;
 import butterknife.internal.Utils;
@@ -22,7 +23,7 @@ public class CardActivity_ViewBinding implements Unbinder {
   public CardActivity_ViewBinding(CardActivity target, View source) {
     this.target = target;
 
-    target.item = Utils.findRequiredView(source, R.id.item, "field 'item'");
+    target.recyclerView = Utils.findRequiredViewAsType(source, R.id.comment, "field 'recyclerView'", RecyclerView.class);
   }
 
   @Override
@@ -32,6 +33,6 @@ public class CardActivity_ViewBinding implements Unbinder {
     if (target == null) throw new IllegalStateException("Bindings already cleared.");
     this.target = null;
 
-    target.item = null;
+    target.recyclerView = null;
   }
 }

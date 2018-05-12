@@ -1,4 +1,4 @@
-#Sat May 12 21:01:26 GMT+08:00 2018
+#Sat May 12 23:39:05 GMT+08:00 2018
 base.0=D\:\\AndroidStudioProjects\\IK_TELL\\app\\bin\\intermediates\\transforms\\dexMerger\\360\\debug\\2
 path.0=classes.dex
 renamed.0=classes.dex

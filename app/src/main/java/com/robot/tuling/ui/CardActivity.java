@@ -5,7 +5,10 @@ import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
+import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.robot.tuling.R;
 import com.robot.tuling.adapter.CommentAdapter;
 import com.robot.tuling.beans.MessageInfo;
@@ -17,17 +20,21 @@ import java.io.InputStream;
 import java.net.HttpURLConnection;
 import java.net.URL;
 
+import butterknife.BindView;
+
 /**
  * Created by ZDL on 2018/5/12.
  */
 
 public class CardActivity extends AppCompatActivity {
 
+    @BindView(R.id.comment)
+    RecyclerView recyclerView;
+
     MessageInfo messageInfo;
     JSONObject jsonObject;
     JSONArray comments;
 
-    RecyclerView recyclerView;
     CommentAdapter adapter;
 
     @Override
@@ -83,7 +90,12 @@ public class CardActivity extends AppCompatActivity {
 
         @Override
         protected void onPostExecute(Boolean success) {
+            if (success) {
+                adapter = new CommentAdapter(comments);
+                recyclerView.setAdapter(adapter);
+                if (comments.length() == 0) Toast.makeText(CardActivity.this, "暂无评论", Toast.LENGTH_SHORT).show();
 
+            }
         }
     }
 }

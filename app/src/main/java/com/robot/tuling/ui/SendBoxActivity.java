@@ -19,9 +19,13 @@ import com.robot.tuling.R;
 import com.robot.tuling.adapter.MessageAdapter;
 import com.robot.tuling.beans.MessageInfo;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.InputStream;
+import java.net.HttpURLConnection;
+import java.net.URL;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
@@ -81,6 +85,7 @@ public class SendBoxActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
         messageAdapter = new MessageAdapter(mMessageInfoList);
         recyclerView.setAdapter(messageAdapter);
+        new UserReceiveTask("123", 0).execute();
     }
 
     @OnClick(R.id.iv_send_msg)
@@ -177,5 +182,65 @@ public class SendBoxActivity extends AppCompatActivity {
         mAuthTask = new UserSendTask(token, data);
         mAuthTask.execute((Void) null);
     }
-        
+
+
+    public class UserReceiveTask extends AsyncTask<Void, Void, Boolean> {
+
+        private final String mToken;
+        private int index;
+
+        UserReceiveTask(String token, int index) {
+            mToken = token;
+            this.index = index;
+        }
+
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            // TODO: attempt authentication against a network service.
+
+            try {
+                StringBuilder input = new StringBuilder();
+                URL url = new URL("http://45.77.191.48:9292/card/my?index=" + index + "&token=" + mToken);
+                HttpURLConnection conn = (HttpURLConnection) url.openConnection();
+                conn.setRequestMethod("GET");
+                conn.connect();
+                InputStream is = conn.getInputStream();
+                int c;
+                while((c = is.read()) != -1) {
+                    input.append((char) c);
+                }
+                conn.disconnect();
+                JSONArray cards = new JSONObject(input.toString()).getJSONArray("cards");
+                mMessageInfoList.clear();
+                for (int i = 0; i < cards.length(); i++) {
+                    SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+
+                    mMessageInfoList.add(new MessageInfo(((JSONObject) cards.get(i)).get("data") + "", ((JSONObject) cards.get(i)).get("like") + "",
+                            ((JSONObject) cards.get(i)).get("comment") + "", ((JSONObject) cards.get(i)).get("uuid") + "",
+                            new Date(String.valueOf(format.parse((String) ((JSONObject) cards.get(i)).get("time"))))));
+                }
+            }
+            catch (Exception e) {
+                e.printStackTrace();
+            }
+
+            // TODO: register the new account here.
+            return true;
+        }
+
+        @Override
+        protected void onPostExecute(final Boolean success) {
+            // 处理接收数据
+            Log.e("......", "sssssssssssssss");
+            for (int i = 0; i < messageAdapter.getItemCount(); i++) {
+                Log.e("......", "sssssssssssssss" + i);
+                messageAdapter.notifyItemInserted(i);
+            }
+        }
+
+        @Override
+        protected void onCancelled() {
+            // 省略
+        }
+    }
 }
