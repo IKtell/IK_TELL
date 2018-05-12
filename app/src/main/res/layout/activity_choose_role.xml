@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".ui.ChooseRoleActivity">
+
+    <Button
+        android:id="@+id/btn_girl"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:background="@drawable/shape_btn_light_yellow"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/girl"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_boy"
+        android:layout_width="96dp"
+        android:layout_height="48dp"
+        android:background="@null"
+        android:layout_marginRight="64dp"
+        android:layout_marginEnd="64dp"
+        android:layout_marginTop="48dp"
+        android:text="@string/boy"
+        android:textColor="@color/orange"
+        android:textSize="24sp"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/btn_girl1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/girl1"
+        app:layout_constraintTop_toBottomOf="@id/btn_girl"
+        app:layout_constraintLeft_toLeftOf="@id/btn_girl"
+        app:layout_constraintRight_toRightOf="@id/btn_girl"/>
+
+    <TextView
+        android:id="@+id/text_girl1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/orange"
+        android:padding="12dp"
+        android:text="@string/text_girl1"
+        app:layout_constraintTop_toBottomOf="@id/btn_girl1"
+        app:layout_constraintLeft_toLeftOf="@id/btn_girl"
+        app:layout_constraintRight_toRightOf="@id/btn_girl"/>
+
+    <ImageView
+        android:id="@+id/btn_girl2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/girl2"
+        app:layout_constraintTop_toBottomOf="@id/text_girl1"
+        app:layout_constraintLeft_toLeftOf="@id/btn_girl"
+        app:layout_constraintRight_toRightOf="@id/btn_girl"/>
+
+    <TextView
+        android:id="@+id/text_girl2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/orange"
+        android:padding="12dp"
+        android:text="@string/text_girl2"
+        app:layout_constraintTop_toBottomOf="@id/btn_girl2"
+        app:layout_constraintLeft_toLeftOf="@id/btn_girl"
+        app:layout_constraintRight_toRightOf="@id/btn_girl"/>
+
+    <ImageView
+        android:id="@+id/btn_girl3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/girl3"
+        app:layout_constraintTop_toBottomOf="@id/text_girl2"
+        app:layout_constraintLeft_toLeftOf="@id/btn_girl"
+        app:layout_constraintRight_toRightOf="@id/btn_girl"/>
+
+    <TextView
+        android:id="@+id/text_girl3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/orange"
+        android:padding="12dp"
+        android:text="@string/text_girl3"
+        app:layout_constraintTop_toBottomOf="@id/btn_girl3"
+        app:layout_constraintLeft_toLeftOf="@id/btn_girl"
+        app:layout_constraintRight_toRightOf="@id/btn_girl"/>
+
+    <ImageView
+        android:id="@+id/btn_boy1"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/boy1"
+        app:layout_constraintTop_toBottomOf="@id/btn_boy"
+        app:layout_constraintLeft_toLeftOf="@id/btn_boy"
+        app:layout_constraintRight_toRightOf="@id/btn_boy"/>
+
+    <TextView
+        android:id="@+id/text_boy1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/orange"
+        android:padding="12dp"
+        android:text="@string/text_boy1"
+        app:layout_constraintTop_toBottomOf="@id/btn_boy1"
+        app:layout_constraintLeft_toLeftOf="@id/btn_boy"
+        app:layout_constraintRight_toRightOf="@id/btn_boy"/>
+
+    <ImageView
+        android:id="@+id/btn_boy2"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/boy2"
+        app:layout_constraintTop_toBottomOf="@id/text_boy1"
+        app:layout_constraintLeft_toLeftOf="@id/btn_boy"
+        app:layout_constraintRight_toRightOf="@id/btn_boy"/>
+
+    <TextView
+        android:id="@+id/text_boy2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/orange"
+        android:padding="12dp"
+        android:text="@string/text_boy2"
+        app:layout_constraintTop_toBottomOf="@id/btn_boy2"
+        app:layout_constraintLeft_toLeftOf="@id/btn_boy"
+        app:layout_constraintRight_toRightOf="@id/btn_boy"/>
+
+    <ImageView
+        android:id="@+id/btn_boy3"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:src="@drawable/boy3"
+        app:layout_constraintTop_toBottomOf="@id/text_boy2"
+        app:layout_constraintLeft_toLeftOf="@id/btn_boy"
+        app:layout_constraintRight_toRightOf="@id/btn_boy"/>
+
+    <TextView
+        android:id="@+id/text_boy3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:textColor="@color/orange"
+        android:padding="12dp"
+        android:text="@string/text_boy3"
+        app:layout_constraintTop_toBottomOf="@id/btn_boy3"
+        app:layout_constraintLeft_toLeftOf="@id/btn_boy"
+        app:layout_constraintRight_toRightOf="@id/btn_boy"/>
+
+</android.support.constraint.ConstraintLayout>

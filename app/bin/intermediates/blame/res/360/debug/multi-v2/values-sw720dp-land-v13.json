@@ -1,0 +1,19 @@
+{
+    "logs": [
+        {
+            "outputFile": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/incremental/merge360DebugResources/merged.dir/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+            "map": [
+                {
+                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/res/values-sw720dp-land-v13/values-sw720dp-land-v13.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "51",
+                        "endOffsets": "102"
+                    }
+                }
+            ]
+        }
+    ]
+}

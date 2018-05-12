@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">IK TELL</string>
+    <string name="app_version">版本 2.0</string>
+    <string name="app_copyright">Copyright©2018 联创hackday欢迎各队 版权所有</string>
+
+    <string name="ok">确认</string>
+    <string name="cancel">取消</string>
+    <string name="about">关于</string>
+    <string name="exit">退出</string>
+    <string name="action_settings">设置</string>
+
+    <string name="please_choose">请选择</string>
+    <string name="copy_message">复制</string>
+    <string name="delete_message">删除</string>
+
+    <string name="just_now">刚刚</string>
+    <string name="minuites_ago">分钟前</string>
+    <string name="hours_ago">小时前</string>
+    <string name="yestoday">昨天</string>
+    <string name="the_day_before_yestoday">前天</string>
+    <string name="days_ago">天前</string>
+
+    <string name="xlistview_header_hint_normal">下拉刷新</string>
+    <string name="xlistview_header_hint_ready">松开刷新数据</string>
+    <string name="xlistview_header_hint_loading">正在加载...</string>
+    <string name="xlistview_header_last_time">上次更新时间：</string>
+    <string name="xlistview_footer_hint_normal">查看更多</string>
+    <string name="xlistview_footer_hint_ready">松开载入更多</string>
+    <string name="register">注册</string>
+    <string name="login">登录</string>
+    <string name="user_no">学号</string>
+    <string name="password">密码</string>
+    <string name="girl">女</string>
+    <string name="boy">男</string>
+    <string name="text_girl1">学霸学姐</string>
+    <string name="text_girl2">吃货妹妹</string>
+    <string name="text_boy1">暖男弟弟</string>
+    <string name="text_girl3">美妆达人</string>
+    <string name="text_boy2">运动男神</string>
+    <string name="text_boy3">科研大佬</string>
+    <string name="text_skill_points">专业技能</string>
+    <string name="text_choose_major">专业选择</string>
+    <string name="text_skill_point">专业技能点</string>
+
+    <array name="majors">
+        <item>教育</item>
+        <item>心理</item>
+        <item>文学</item>
+        <item>新闻传播</item>
+        <item>历史</item>
+        <item>马克思主义</item>
+        <item>经济与工商管理</item>
+        <item>公共管理</item>
+        <item>法学</item>
+        <item>社会学</item>
+        <item>外国语</item>
+        <item>教育信息技术</item>
+        <item>信息管理</item>
+        <item>音乐与美术</item>
+        <item>数学与统计学</item>
+        <item>物理</item>
+        <item>化学</item>
+        <item>生命科学</item>
+        <item>计算机</item>
+        <item>城市与环境</item>
+        <item>政治与国际关系</item>
+    </array>
+
+    <string name="picture">Picture</string>
+    <string name="description_info">Info</string>
+    <string name="request_permission">This sample needs camera permission.</string>
+    <string name="camera_error">This device doesn\'t support Camera2 API.</string>
+    <string name="test_id">2016110110</string>
+    <string name="test_password">123456</string>
+</resources>
