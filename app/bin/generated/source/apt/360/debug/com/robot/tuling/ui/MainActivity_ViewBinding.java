@@ -32,6 +32,7 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.ivSendMsg = Utils.findRequiredViewAsType(source, R.id.iv_send_msg, "field 'ivSendMsg'", ImageView.class);
     target.etMsg = Utils.findRequiredViewAsType(source, R.id.et_msg, "field 'etMsg'", EditText.class);
     target.rlMsg = Utils.findRequiredViewAsType(source, R.id.rl_msg, "field 'rlMsg'", RelativeLayout.class);
+    target.ivSendBox = Utils.findRequiredViewAsType(source, R.id.iv_send_box, "field 'ivSendBox'", ImageView.class);
   }
 
   @Override
@@ -46,5 +47,6 @@ public class MainActivity_ViewBinding implements Unbinder {
     target.ivSendMsg = null;
     target.etMsg = null;
     target.rlMsg = null;
+    target.ivSendBox = null;
   }
 }

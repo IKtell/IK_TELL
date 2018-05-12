@@ -1,9 +1,7 @@
 package com.robot.tuling.ui;
 
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -51,6 +49,8 @@ public class MainActivity extends BaseActivity {
     EditText etMsg;
     @BindView(R.id.rl_msg)
     RelativeLayout rlMsg;
+    @BindView(R.id.iv_send_box)
+    ImageView ivSendBox;
 
     private List<MessageEntity> msgList = new ArrayList<>();
     private ChatMessageAdapter msgAdapter;
@@ -89,7 +89,7 @@ public class MainActivity extends BaseActivity {
     private void initListener() {
         ivSendMsg.setOnClickListener(v -> sendMessage());
 //        ivSendMsg.setOnClickListener(v -> funcDemo());
-
+        ivSendBox.setOnClickListener(v -> OpenBox());
         lvMessage.setOnScrollListener(new AbsListView.OnScrollListener() {
             @Override
             public void onScrollStateChanged(AbsListView view, int scrollState) {
@@ -100,6 +100,11 @@ public class MainActivity extends BaseActivity {
             public void onScroll(AbsListView view, int firstVisibleItem, int visibleItemCount, int totalItemCount) {
             }
         });
+    }
+
+    private void OpenBox() {
+        Intent intent = new Intent(MainActivity.this, SendBoxActivity.class);
+        startActivity(intent);
     }
 
     @Override

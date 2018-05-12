@@ -1,23 +1,23 @@
 -- Merging decision tree log ---
 meta-data#UMENG_CHANNEL
-INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:36:9-38:45
+INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:38:9-40:46
 	android:value
 		INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:38:13-43
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:40:13-43
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:37:13-41
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:39:13-41
 manifest
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-75:12
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
 MERGED from [com.android.support:design:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/7d8ad4102cff51c5971d7cf13db80587/AndroidManifest.xml:17:1-22:12
 MERGED from [com.afollestad.material-dialogs:core:0.9.4.4] /home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/AndroidManifest.xml:2:1-15:12
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:17:1-22:12
 MERGED from [com.lguipeng.bubbleview:library:1.0.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/2e0d48fa7d96a1d6303d0d83a9b678aa/AndroidManifest.xml:2:1-16:12
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:2:1-37:12
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/f31116614e96cf457c42ce609833b8bc/AndroidManifest.xml:6:1-16:12
 MERGED from [com.android.support:appcompat-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:cardview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a2fed1bc9f67c6f99fff18f99c69dd45/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v13:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/e3729593ef6fe64eab486565f1a2529e/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-v4:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-v4-27.0.2.aar/2b14a7a01333c68f02ed115dcf000825/AndroidManifest.xml:17:1-22:12
@@ -29,123 +29,123 @@ MERGED from [io.reactivex.rxjava2:rxandroid:2.0.1] /home/patrick/.gradle/caches/
 MERGED from [com.android.support:support-fragment:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-fragment-27.0.2.aar/2f1e8d4df40d5d46124c99608a54a8ba/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-utils:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/356c4fd0b411d2ac82ae8663220d5cb2/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:transition:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/56d0c4ea5e5919bd4f66582284f2ad2b/AndroidManifest.xml:17:1-22:12
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/ca83efa0c13e88b5a91fb4cf2dbb032a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/c37ff82a5eb65146327ef84834d79259/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-core-ui:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/64fd77521997b9e18c71757d57529bef/AndroidManifest.xml:17:1-22:12
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/ca83efa0c13e88b5a91fb4cf2dbb032a/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/32c9c677d2910b8f81689f86df9d1dfc/AndroidManifest.xml:17:1-22:12
 MERGED from [com.android.support:support-compat:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/9b0f732a9f5dfc057ec49a73577cb530/AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:runtime:1.0.3] /home/patrick/.gradle/caches/transforms-1/files-1.1/runtime-1.0.3.aar/65944042e1845ebb861a3d1586ed773b/AndroidManifest.xml:17:1-24:12
-INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-75:12
-INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-75:12
+INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
+INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
 	package
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:4:5-31
 		INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml
 		INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-75:12
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
 		INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml
 	xmlns:tools
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:3:5-51
 	android:versionCode
 		INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-75:12
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:1-82:12
 		INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.RECEIVE_USER_PRESENT
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:6:5-78
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:6:5-79
 	android:name
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:6:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:7:5-66
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:7:5-67
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:11:5-67
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:11:5-67
 	android:name
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:7:22-64
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:8:5-67
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:8:5-68
 	android:name
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:8:22-65
 uses-permission#android.permission.READ_PHONE_STATE
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:9:5-74
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:9:5-75
 	android:name
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:9:22-72
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:10:5-80
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:10:5-81
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:16:5-81
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:16:5-81
 	android:name
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:10:22-78
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:11:5-79
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:11:5-80
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:15:5-80
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:15:5-80
 	android:name
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:11:22-77
 uses-permission#android.permission.WRITE_SETTINGS
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:12:5-13:47
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:12:5-14:47
 	tools:ignore
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:13:9-44
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:14:9-44
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:12:22-70
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:13:9-57
 uses-permission#android.permission.CAMERA
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:14:5-65
-	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:14:22-62
-uses-permission#android.permission.VIBRATE
 ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:15:5-65
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:15:22-63
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:15:22-62
+uses-permission#android.permission.VIBRATE
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:16:5-66
+	android:name
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:16:22-63
 uses-permission#android.permission.MOUNT_UNMOUNT_FILESYSTEMS
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:16:5-17:47
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:17:5-19:47
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:14:5-84
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:14:5-84
 	tools:ignore
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:17:9-44
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:19:9-44
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:16:22-81
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:18:9-68
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:18:5-78
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:20:5-79
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:13:5-79
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:13:5-79
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:18:22-76
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:20:22-76
 uses-permission#android.permission.SYSTEM_ALERT_WINDOW
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:19:5-77
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:21:5-78
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:17:5-78
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:17:5-78
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:19:22-75
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:21:22-75
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:20:5-80
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:22:5-81
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:20:22-78
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:22:22-78
 uses-permission#android.permission.ACCESS_WIFI_STATE
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:21:5-75
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:23:5-76
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:12:5-76
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:12:5-76
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:21:22-73
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:23:22-73
 uses-permission#android.permission.CHANGE_WIFI_STATE
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:22:5-75
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:24:5-76
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:22:22-73
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:24:22-73
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:23:5-78
-	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:23:22-76
-uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:24:5-88
-	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:24:22-86
-uses-permission#android.permission.CHANGE_NETWORK_STATE
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:25:5-78
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:25:5-79
 	android:name
 		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:25:22-76
+uses-permission#android.permission.ACCESS_LOCATION_EXTRA_COMMANDS
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:26:5-89
+	android:name
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:26:22-86
+uses-permission#android.permission.CHANGE_NETWORK_STATE
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:27:5-79
+	android:name
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:27:22-76
 application
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:27:5-73:19
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:29:5-80:19
 MERGED from [com.afollestad.material-dialogs:core:0.9.4.4] /home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/AndroidManifest.xml:13:5-20
 MERGED from [com.afollestad.material-dialogs:core:0.9.4.4] /home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/AndroidManifest.xml:13:5-20
 MERGED from [com.lguipeng.bubbleview:library:1.0.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/2e0d48fa7d96a1d6303d0d83a9b678aa/AndroidManifest.xml:11:5-14:19
@@ -157,69 +157,73 @@ MERGED from [com.android.support.constraint:constraint-layout:1.1.0] /home/patri
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/4a07db373c19004cd9e02a45ac0a98bc/AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:2.1.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/circleimageview-2.1.0.aar/4a07db373c19004cd9e02a45ac0a98bc/AndroidManifest.xml:9:5-20
 	android:label
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:31:9-41
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:33:9-41
 	android:icon
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:30:9-42
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:32:9-42
 	android:allowBackup
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:29:9-35
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:31:9-35
 	android:theme
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:32:9-40
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:34:9-40
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:28:9-42
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:30:9-42
 meta-data#UMENG_APPKEY
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:33:9-35:55
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:35:9-37:56
 	android:value
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:35:13-53
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:37:13-53
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:34:13-40
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:36:13-40
 activity#com.robot.tuling.ui.MainActivity
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:40:9-52:20
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:42:9-54:20
 	android:label
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:42:13-45
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:44:13-45
 	android:windowSoftInputMode
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:43:13-67
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:45:13-67
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:41:13-44
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:43:13-44
 activity#com.robot.tuling.ui.CameraActivity
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:53:9-59:20
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:55:9-61:20
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:53:19-52
-intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:54:13-58:29
-action#android.intent.action.MAIN
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:55:17-68
-	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:55:25-66
-category#android.intent.category.LAUNCHER
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:57:17-76
-	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:57:27-74
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:55:19-52
 activity#com.robot.tuling.ui.AboutActivity
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:60:9-62:51
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:62:9-64:52
 	android:screenOrientation
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:62:13-49
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:64:13-49
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:61:13-45
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:63:13-45
 activity#com.robot.tuling.ui.NewsActivity
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:63:9-65:51
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:65:9-67:52
 	android:screenOrientation
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:65:13-49
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:67:13-49
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:64:13-44
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:66:13-44
 activity#com.robot.tuling.ui.DetailActivity
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:66:9-68:51
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:68:9-70:52
 	android:screenOrientation
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:68:13-49
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:70:13-49
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:67:13-46
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:69:13-46
 activity#com.robot.tuling.ui.ChooseRoleActivity
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:69:9-70:20
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:71:9-68
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:69:19-56
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:71:19-56
 activity#com.robot.tuling.ui.SkillPointsActivity
-ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:71:9-72:20
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:72:9-69
 	android:name
-		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:71:19-57
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:72:19-57
+activity#com.robot.tuling.ui.SendBoxActivity
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:73:9-79:20
+	android:name
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:73:19-53
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:74:13-78:29
+action#android.intent.action.MAIN
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:75:17-69
+	android:name
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:75:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:77:17-77
+	android:name
+		ADDED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml:77:27-74
 uses-sdk
 INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/AndroidManifest.xml
@@ -228,6 +232,8 @@ MERGED from [com.android.support:design:27.0.2] /home/patrick/.gradle/caches/tra
 MERGED from [com.android.support:design:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/7d8ad4102cff51c5971d7cf13db80587/AndroidManifest.xml:20:5-44
 MERGED from [com.afollestad.material-dialogs:core:0.9.4.4] /home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/AndroidManifest.xml:8:5-11:75
 MERGED from [com.afollestad.material-dialogs:core:0.9.4.4] /home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/AndroidManifest.xml:8:5-11:75
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:20:5-44
 MERGED from [com.lguipeng.bubbleview:library:1.0.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/2e0d48fa7d96a1d6303d0d83a9b678aa/AndroidManifest.xml:7:5-9:41
 MERGED from [com.lguipeng.bubbleview:library:1.0.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.0.0.aar/2e0d48fa7d96a1d6303d0d83a9b678aa/AndroidManifest.xml:7:5-9:41
 MERGED from [com.sunfusheng:FirUpdater:1.0.7] /home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/AndroidManifest.xml:7:5-9:41
@@ -236,8 +242,6 @@ MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.0] /home/patric
 MERGED from [me.zhanghai.android.materialprogressbar:library:1.4.0] /home/patrick/.gradle/caches/transforms-1/files-1.1/library-1.4.0.aar/f31116614e96cf457c42ce609833b8bc/AndroidManifest.xml:12:5-14:41
 MERGED from [com.android.support:appcompat-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:appcompat-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-27.0.2.aar/db3d7b1a15f150e1c7549bf4aea26986/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a2fed1bc9f67c6f99fff18f99c69dd45/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:cardview-v7:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/cardview-v7-27.0.2.aar/a2fed1bc9f67c6f99fff18f99c69dd45/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-v13:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-v13-27.0.2.aar/e3729593ef6fe64eab486565f1a2529e/AndroidManifest.xml:20:5-44
@@ -260,12 +264,12 @@ MERGED from [com.android.support:support-core-utils:27.0.2] /home/patrick/.gradl
 MERGED from [com.android.support:support-core-utils:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-core-utils-27.0.2.aar/356c4fd0b411d2ac82ae8663220d5cb2/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/56d0c4ea5e5919bd4f66582284f2ad2b/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:transition:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/transition-27.0.2.aar/56d0c4ea5e5919bd4f66582284f2ad2b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/ca83efa0c13e88b5a91fb4cf2dbb032a/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-media-compat:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/ca83efa0c13e88b5a91fb4cf2dbb032a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/c37ff82a5eb65146327ef84834d79259/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:animated-vector-drawable:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-27.0.2.aar/c37ff82a5eb65146327ef84834d79259/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/64fd77521997b9e18c71757d57529bef/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-core-ui:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-core-ui-27.0.2.aar/64fd77521997b9e18c71757d57529bef/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/ca83efa0c13e88b5a91fb4cf2dbb032a/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-media-compat:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/ca83efa0c13e88b5a91fb4cf2dbb032a/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/32c9c677d2910b8f81689f86df9d1dfc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-vector-drawable:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-27.0.2.aar/32c9c677d2910b8f81689f86df9d1dfc/AndroidManifest.xml:20:5-44
 MERGED from [com.android.support:support-compat:27.0.2] /home/patrick/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/9b0f732a9f5dfc057ec49a73577cb530/AndroidManifest.xml:20:5-44

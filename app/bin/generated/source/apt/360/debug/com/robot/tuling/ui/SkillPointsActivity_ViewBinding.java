@@ -17,7 +17,7 @@ import java.lang.Override;
 public class SkillPointsActivity_ViewBinding implements Unbinder {
   private SkillPointsActivity target;
 
-  private View view2131296495;
+  private View view2131296499;
 
   @UiThread
   public SkillPointsActivity_ViewBinding(SkillPointsActivity target) {
@@ -32,7 +32,7 @@ public class SkillPointsActivity_ViewBinding implements Unbinder {
     target.mRecyclerChooseMajor = Utils.findRequiredViewAsType(source, R.id.recycler_choose_major, "field 'mRecyclerChooseMajor'", RecyclerView.class);
     view = Utils.findRequiredView(source, R.id.text_major, "field 'mTextMajor' and method 'onTextMajorClicked'");
     target.mTextMajor = Utils.castView(view, R.id.text_major, "field 'mTextMajor'", TextView.class);
-    view2131296495 = view;
+    view2131296499 = view;
     view.setOnClickListener(new DebouncingOnClickListener() {
       @Override
       public void doClick(View p0) {
@@ -55,7 +55,7 @@ public class SkillPointsActivity_ViewBinding implements Unbinder {
     target.mCardView = null;
     target.mTextChooseMajor = null;
 
-    view2131296495.setOnClickListener(null);
-    view2131296495 = null;
+    view2131296499.setOnClickListener(null);
+    view2131296499 = null;
   }
 }
