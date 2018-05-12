@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/incremental/merge360DebugResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml",
+            "outputFile": "/home/daily/AndroidStudioProjects/IK_TELL/app/bin/intermediates/incremental/merge360DebugResources/merged.dir/values-sw720dp-v13/values-sw720dp-v13.xml",
             "map": [
                 {
-                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/res/values-sw720dp-v13/values-sw720dp-v13.xml",
+                    "source": "/home/daily/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/4b296c2a4f06ab8dcb81c072f909281b/res/values-sw720dp-v13/values-sw720dp-v13.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",

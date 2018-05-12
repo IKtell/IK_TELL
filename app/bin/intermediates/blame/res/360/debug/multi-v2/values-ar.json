@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/incremental/merge360DebugResources/merged.dir/values-ar/values-ar.xml",
+            "outputFile": "/home/daily/AndroidStudioProjects/IK_TELL/app/bin/intermediates/incremental/merge360DebugResources/merged.dir/values-ar/values-ar.xml",
             "map": [
                 {
-                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/9b0f732a9f5dfc057ec49a73577cb530/res/values-ar/values-ar.xml",
+                    "source": "/home/daily/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/21c901884aa36a30fc856457384a845e/res/values-ar/values-ar.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -21,7 +21,7 @@
                     }
                 },
                 {
-                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/res/values-ar/values-ar.xml",
+                    "source": "/home/daily/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/48394db82202dde3ab19599da2b5eb90/res/values-ar/values-ar.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",

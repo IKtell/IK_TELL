@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/incremental/merge360DebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+            "outputFile": "/home/daily/AndroidStudioProjects/IK_TELL/app/bin/intermediates/incremental/merge360DebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
             "map": [
                 {
-                    "source": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/res/values-w820dp/dimens.xml",
+                    "source": "/home/daily/AndroidStudioProjects/IK_TELL/app/src/main/res/values-w820dp/dimens.xml",
                     "from": {
                         "startLines": "1",
                         "startColumns": "4",

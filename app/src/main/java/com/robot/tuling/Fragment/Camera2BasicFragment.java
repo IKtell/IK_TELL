@@ -43,6 +43,7 @@ import android.hardware.camera2.TotalCaptureResult;
 import android.hardware.camera2.params.StreamConfigurationMap;
 import android.media.Image;
 import android.media.ImageReader;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.HandlerThread;
@@ -70,9 +71,14 @@ import com.robot.tuling.ui.ChooseRoleActivity;
 import com.robot.tuling.widget.AutoFitTextureView;
 
 
+import org.json.JSONObject;
+import org.reactivestreams.Subscriber;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.UnsupportedEncodingException;
+import java.net.UnknownHostException;
 import java.nio.ByteBuffer;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -82,9 +88,22 @@ import java.util.List;
 import java.util.concurrent.Semaphore;
 import java.util.concurrent.TimeUnit;
 
+import io.reactivex.Observable;
+import io.reactivex.ObservableEmitter;
+import io.reactivex.ObservableOnSubscribe;
+import io.reactivex.Observer;
+import io.reactivex.Scheduler;
+import io.reactivex.android.schedulers.AndroidSchedulers;
+import io.reactivex.disposables.Disposable;
+import io.reactivex.schedulers.Schedulers;
+import okhttp3.MediaType;
+import okhttp3.MultipartBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
+import okhttp3.Response;
 import retrofit2.Call;
 import retrofit2.Callback;
-import retrofit2.Response;
 
 public class Camera2BasicFragment extends Fragment
         implements View.OnClickListener, ActivityCompat.OnRequestPermissionsResultCallback {
@@ -95,6 +114,7 @@ public class Camera2BasicFragment extends Fragment
     private static final SparseIntArray ORIENTATIONS = new SparseIntArray();
     private static final int REQUEST_CAMERA_PERMISSION = 1;
     private static final String FRAGMENT_DIALOG = "dialog";
+    private final String url = "http://45.77.191.48:9292/login";
 
     static {
         ORIENTATIONS.append(Surface.ROTATION_0, 90);
@@ -448,6 +468,64 @@ public class Camera2BasicFragment extends Fragment
     public void onViewCreated(final View view, Bundle savedInstanceState) {
         view.findViewById(R.id.picture).setOnClickListener(this);
         mTextureView = (AutoFitTextureView) view.findViewById(R.id.texture);
+    }
+
+    private void asyncUpload() {
+        Observable.create(new ObservableOnSubscribe<String>() {
+            @Override
+            public void subscribe(ObservableEmitter<String> e) throws Exception {
+                uploadImage(url, mFile);
+                e.onComplete();
+            }
+        })
+                .subscribeOn(Schedulers.io())
+                .observeOn(AndroidSchedulers.mainThread())
+                .subscribe(new Observer<String>() {
+                    @Override
+                    public void onSubscribe(Disposable d) {
+
+                    }
+
+                    @Override
+                    public void onNext(String value) {
+
+                    }
+
+                    @Override
+                    public void onError(Throwable e) {
+
+                    }
+
+                    @Override
+                    public void onComplete() {
+                        Log.d(TAG, "onComplete: Rxjava complete!");
+                    }
+                });
+    }
+
+    public static void uploadImage(String url, File file) {
+
+        try {
+
+            final MediaType MEDIA_TYPE_PNG = MediaType.parse("image/jpeg");
+
+            RequestBody req = new MultipartBody.Builder().setType(MultipartBody.FORM)
+                    .addFormDataPart("userfile","profile.png", RequestBody.create(MEDIA_TYPE_PNG, file)).build();
+
+            Request request = new Request.Builder()
+                    .url(url)
+                    .post(req)
+                    .build();
+
+            OkHttpClient client = new OkHttpClient();
+            Response response = client.newCall(request).execute();
+
+            Log.d("response", "uploadImage:"+response.body().string());
+        } catch (UnknownHostException | UnsupportedEncodingException e) {
+            Log.e(TAG, "Error: " + e.getLocalizedMessage());
+        } catch (Exception e) {
+            Log.e(TAG, "Other Error: " + e.getLocalizedMessage());
+        }
     }
 
     @Override
@@ -871,7 +949,8 @@ public class Camera2BasicFragment extends Fragment
                     Call<LoginEntity> callback = retrofitService.login(TulingParams.studentID, password);
                     callback.enqueue(new Callback<LoginEntity>() {
                         @Override
-                        public void onResponse(Call<LoginEntity> call, Response<LoginEntity> response) {
+                        public void onResponse(Call<LoginEntity> call,
+                                               retrofit2.Response<LoginEntity> response) {
                             if ("SUCCESS".equalsIgnoreCase(response.body().getStatus())) {
                                 Intent intent = new Intent(getActivity(), ChooseRoleActivity.class);
                                 startActivity(intent);
@@ -890,7 +969,10 @@ public class Camera2BasicFragment extends Fragment
             mCaptureSession.stopRepeating();
             mCaptureSession.abortCaptures();
             mCaptureSession.capture(captureBuilder.build(), CaptureCallback, null);
+            Thread.sleep(1000);
         } catch (CameraAccessException e) {
+            e.printStackTrace();
+        } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }

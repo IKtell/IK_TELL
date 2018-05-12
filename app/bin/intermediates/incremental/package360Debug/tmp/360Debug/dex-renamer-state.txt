@@ -1,4 +1,4 @@
-#Sat May 12 21:50:22 CST 2018
-base.0=/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/transforms/dexMerger/360/debug/0
+#Sun May 13 00:48:08 CST 2018
+base.0=/home/daily/AndroidStudioProjects/IK_TELL/app/bin/intermediates/transforms/dexMerger/360/debug/0
 path.0=classes.dex
 renamed.0=classes.dex
