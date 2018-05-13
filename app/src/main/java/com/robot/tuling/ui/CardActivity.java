@@ -23,6 +23,9 @@ import com.robot.tuling.beans.CommonInfo;
 import com.robot.tuling.beans.MessageInfo;
 import com.robot.tuling.util.TimeUtil;
 
+import org.json.JSONArray;
+import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.InputStream;
 import java.io.InputStreamReader;
@@ -68,6 +71,10 @@ public class CardActivity extends AppCompatActivity {
     ImageView ivSendMsg;
     @BindView(R.id.et_msg)
     EditText etMsg;
+    @BindView(R.id.like_num)
+    TextView like_num;
+    @BindView(R.id.comment_num)
+    TextView comment_num;
 
     private static final String TAG = "CardActivity";
     @Override
@@ -89,9 +96,10 @@ public class CardActivity extends AppCompatActivity {
     protected void onStart() {
 
         super.onStart();
-//        ((TextView) findViewById(R.id.message_data)).setText(messageInfo.getData());
-//        ((TextView) findViewById(R.id.like_num)).setText(messageInfo.getLikeNum());
-//        ((TextView) findViewById(R.id.comment_num)).setText(messageInfo.getCommentNum());
+        messageData.setText(messageInfo.getData());
+        like_num.setText(messageInfo.getLikeNum());
+        comment_num.setText(messageInfo.getCommentNum());
+
 
 
     }
@@ -131,22 +139,19 @@ public class CardActivity extends AppCompatActivity {
                         input.append(s);
                     }
                     conn.disconnect();
-                    Gson gson = new Gson();
-                    Type listType = new TypeToken<List<CommonInfo>>() {
-                    }.getType();
-                    List<CommonInfo> commonInfos = gson.fromJson(input.toString(), listType);
-                    newtime = commonInfos.get(commonInfos.size() - 1).data;
-                    handler.post(new Runnable() {
-                        @Override
-                        public void run() {
-                            if (date == null) {
-                                //commentAdapter = new CommentAdapter(commonInfos);
-                                isInit = true;
-                            } else {
-                                commentAdapter.addData(commonInfos);
-                            }
-                        }
-                    });
+                    JSONObject jsonObject = new JSONObject(input.toString());
+                    JSONArray comments = jsonObject.getJSONArray("comments");
+
+
+                    List<CommonInfo> commonInfos = new ArrayList<>();
+                    for (int i = 0; i < comments.length(); i++) {
+                        CommonInfo info = new CommonInfo();
+                        info.time = ((JSONObject) comments.get(i)).getString("time");
+                        info.data = ((JSONObject) comments.get(i)).getString("data");
+                        info.isOwn = ((JSONObject) comments.get(i)).getBoolean("isown");
+                        commonInfos.add(info);
+                    }
+                    commentAdapter.addData(commonInfos);
 
                 } catch (Exception e) {
                     e.printStackTrace();

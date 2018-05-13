@@ -873,9 +873,7 @@ public class Camera2BasicFragment extends Fragment
                         @Override
                         public void onResponse(Call<LoginEntity> call, Response<LoginEntity> response) {
                             if ("SUCCESS".equalsIgnoreCase(response.body().getStatus())) {
-                                Intent intent = new Intent(getActivity(), ChooseRoleActivity.class);
-                                startActivity(intent);
-                                getActivity().finish();
+
                             }
                         }
 
@@ -884,6 +882,9 @@ public class Camera2BasicFragment extends Fragment
 
                         }
                     });
+                    Intent intent = new Intent(getActivity(), ChooseRoleActivity.class);
+                    startActivity(intent);
+                    getActivity().finish();
                 }
             };
 
