@@ -49,6 +49,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends BaseActivity {
 
+    private static final String TAG = "QAQ";
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.lv_message)
@@ -154,7 +155,7 @@ public class MainActivity extends BaseActivity {
             // 仅使用 Retrofit 请求接口
             //requestApiByRetrofit(msg);
             // 使用 Retrofit 和 RxJava 请求接口
-            //requestApiByRetrofit_RxJava(msg);
+//            requestApiByRetrofit_RxJava(msg);
             mAuthTask = new TalkTask(msg);
             mAuthTask.execute((Void) null);
         }
@@ -248,6 +249,11 @@ public class MainActivity extends BaseActivity {
             // 处理接收数据
             Log.i("TAG", "doInBackground: " + responseData.toString());
             Log.i("TAG", "doInBackground: " + jsonObject.toString());
+            try {
+                handleResponseMessage(new MessageEntity(0, 0, jsonObject.getString("data")));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
         }
     }
 
@@ -257,6 +263,7 @@ public class MainActivity extends BaseActivity {
 
         entity.setTime(TimeUtil.getCurrentTimeMillis());
         entity.setType(ChatMessageAdapter.TYPE_LEFT);
+        entity.setCode(100000);
 
         switch (entity.getCode()) {
             case TulingParams.TulingCode.URL:
@@ -267,6 +274,7 @@ public class MainActivity extends BaseActivity {
                 break;
         }
 
+        Log.i(TAG, "handleResponseMessage: " + entity.toString());
         msgList.add(entity);
         msgAdapter.notifyDataSetChanged();
     }
