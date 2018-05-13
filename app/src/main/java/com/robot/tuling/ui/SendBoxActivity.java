@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageView;
@@ -15,9 +16,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.robot.tuling.R;
+import com.robot.tuling.adapter.MessageAdapter;
 import com.robot.tuling.beans.MessageInfo;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import butterknife.BindView;
@@ -33,18 +41,6 @@ public class SendBoxActivity extends AppCompatActivity {
 
     @BindView(R.id.toolbar)
     Toolbar toolbar;
-    @BindView(R.id.message)
-    TextView message;
-    @BindView(R.id.divider)
-    View divider;
-    @BindView(R.id.comment_num)
-    TextView commentNum;
-    @BindView(R.id.comment)
-    ImageView comment;
-    @BindView(R.id.like_num)
-    TextView likeNum;
-    @BindView(R.id.like)
-    ImageView like;
     @BindView(R.id.iv_send_msg)
     ImageView ivSendMsg;
     @BindView(R.id.iv_send_box)
@@ -62,7 +58,11 @@ public class SendBoxActivity extends AppCompatActivity {
 
     String data;
 
-    private List<MessageInfo> mMessageInfos = new ArrayList<>();
+    String TAG;
+
+    JSONObject jsonObject;
+
+    private List<MessageInfo> mMessageInfoList = new ArrayList<>();
 
     private UserSendTask mAuthTask;
 
@@ -72,9 +72,12 @@ public class SendBoxActivity extends AppCompatActivity {
         setContentView(R.layout.activity_send_box);
         ButterKnife.bind(this);
 
+        TAG = "CHECK";
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
-        
+        recyclerView.setLayoutManager(layoutManager);
+        MessageAdapter messageAdapter = new MessageAdapter(mMessageInfoList);
+        recyclerView.setAdapter(messageAdapter);
     }
 
     @OnClick(R.id.iv_send_msg)
@@ -112,7 +115,9 @@ public class SendBoxActivity extends AppCompatActivity {
 
                 Response response = client.newCall(request).execute();
                 responseData = response.body().string();
-
+                Log.i("TAG", "doInBackground: " + responseData.toString());
+                jsonObject = new JSONObject(responseData);
+                Log.i("TAG", "doInBackground: " + jsonObject.toString());
             }
             catch (Exception e) {
                 e.printStackTrace();
@@ -125,12 +130,34 @@ public class SendBoxActivity extends AppCompatActivity {
         @Override
         protected void onPostExecute(final Boolean success) {
             // 处理接收数据
-            if (responseData.contains("success")){
-                message.setText(data);
-                etMsg.setText("");
-            }
-            else{
-//                Toast.makeText(this, "failed", Toast.LENGTH_LONG).show();
+            try {
+                if (jsonObject.getString("status").equals("success")){
+                    try {
+                        Log.i(TAG, "onPostExecute: "+data);
+                        Log.i(TAG, "onPostExecute: "+jsonObject.getString("uuid"));
+                        Log.i(TAG, "onPostExecute: "+jsonObject.getString("time"));
+                        SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
+                        try {
+                            Log.i(TAG, "onPostExecute: "+new Date(String.valueOf(format.parse(jsonObject.getString("time").toString()))));
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                        try {
+                            mMessageInfoList.add(new MessageInfo(data, "0", "0",
+                                    jsonObject.getString("uuid"), new Date(String.valueOf(format.parse(jsonObject.getString("time").toString())))));
+                        } catch (ParseException e) {
+                            e.printStackTrace();
+                        }
+                    } catch (JSONException e) {
+                        e.printStackTrace();
+                    }
+                    etMsg.setText("");
+                }
+                else{
+    //                Toast.makeText(this, "failed", Toast.LENGTH_LONG).show();
+                }
+            } catch (JSONException e) {
+                e.printStackTrace();
             }
         }
 

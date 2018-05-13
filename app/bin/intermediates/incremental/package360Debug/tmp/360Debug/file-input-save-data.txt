@@ -1,5 +1,9 @@
 #Internal package file, do not edit.
+<<<<<<< HEAD
 #Sun May 13 00:48:08 CST 2018
+=======
+#Sun May 13 03:06:27 CST 2018
+>>>>>>> SendBOxA
 0.baseType=DIRECTORY
 0.base=/home/daily/AndroidStudioProjects/IK_TELL/app/bin/intermediates/transforms/dexMerger/360/debug/0
 0.path=classes.dex

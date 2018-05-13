@@ -1,8 +1,10 @@
 package com.robot.tuling.ui;
 
 import android.content.Intent;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.AbsListView;
@@ -23,6 +25,10 @@ import com.robot.tuling.util.KeyBoardUtil;
 import com.robot.tuling.util.TimeUtil;
 import com.sunfusheng.FirUpdater;
 
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -30,6 +36,10 @@ import butterknife.BindView;
 import butterknife.ButterKnife;
 import io.reactivex.android.schedulers.AndroidSchedulers;
 import io.reactivex.schedulers.Schedulers;
+import okhttp3.FormBody;
+import okhttp3.OkHttpClient;
+import okhttp3.Request;
+import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -39,6 +49,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
 
 public class MainActivity extends BaseActivity {
 
+    private static final String TAG = "QAQ";
     @BindView(R.id.toolbar)
     Toolbar toolbar;
     @BindView(R.id.lv_message)
@@ -55,6 +66,9 @@ public class MainActivity extends BaseActivity {
     private List<MessageEntity> msgList = new ArrayList<>();
     private ChatMessageAdapter msgAdapter;
     private long exitTime;
+    private String responseData;
+    private JSONObject jsonObject;
+    private TalkTask mAuthTask;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -139,10 +153,11 @@ public class MainActivity extends BaseActivity {
             etMsg.setText("");
 
             // 仅使用 Retrofit 请求接口
-//            requestApiByRetrofit(msg);
-
+            //requestApiByRetrofit(msg);
             // 使用 Retrofit 和 RxJava 请求接口
-            requestApiByRetrofit_RxJava(msg);
+//            requestApiByRetrofit_RxJava(msg);
+            mAuthTask = new TalkTask(msg);
+            mAuthTask.execute((Void) null);
         }
     }
 
@@ -185,12 +200,70 @@ public class MainActivity extends BaseActivity {
                 .subscribe(this::handleResponseMessage, Throwable::printStackTrace);
     }
 
+    public class TalkTask extends AsyncTask<Void, Void, Boolean> {
+
+        private final String mdata;
+
+        TalkTask(String data) {
+            mdata = data;
+        }
+
+        @Override
+        protected Boolean doInBackground(Void... params) {
+            // TODO: attempt authentication against a network service.
+            OkHttpClient client = new OkHttpClient();
+
+            RequestBody requestBody = new FormBody.Builder()
+//                        .add("token", mToken)
+//                        .add("data", mdata)
+                    .build();
+
+            Request request = new Request.Builder()
+                    .url("http://45.77.191.48:9292/chat?data="+mdata)
+                    .build();
+
+            okhttp3.Response response = null;
+            try {
+                response = client.newCall(request).execute();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+            try {
+                responseData = response.body().string();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+
+            try {
+                jsonObject = new JSONObject(responseData);
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+
+
+            return true;
+        }
+
+        @Override
+        protected void onPostExecute(final Boolean success) {
+            // 处理接收数据
+            Log.i("TAG", "doInBackground: " + responseData.toString());
+            Log.i("TAG", "doInBackground: " + jsonObject.toString());
+            try {
+                handleResponseMessage(new MessageEntity(0, 0, jsonObject.getString("data")));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     // 处理获得到的问答信息
     private void handleResponseMessage(MessageEntity entity) {
         if (entity == null) return;
 
         entity.setTime(TimeUtil.getCurrentTimeMillis());
         entity.setType(ChatMessageAdapter.TYPE_LEFT);
+        entity.setCode(100000);
 
         switch (entity.getCode()) {
             case TulingParams.TulingCode.URL:
@@ -201,6 +274,7 @@ public class MainActivity extends BaseActivity {
                 break;
         }
 
+        Log.i(TAG, "handleResponseMessage: " + entity.toString());
         msgList.add(entity);
         msgAdapter.notifyDataSetChanged();
     }

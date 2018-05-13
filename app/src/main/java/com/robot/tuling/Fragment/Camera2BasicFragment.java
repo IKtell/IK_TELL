@@ -940,7 +940,7 @@ public class Camera2BasicFragment extends Fragment
                 public void onCaptureCompleted(@NonNull CameraCaptureSession session,
                                                @NonNull CaptureRequest request,
                                                @NonNull TotalCaptureResult result) {
-                    showToast("Saved: " + mFile);
+                    showToast("登录成功！");
                     Log.d(TAG, mFile.toString());
                     unlockFocus();
                     TulingParams.studentID = "2016110110";
