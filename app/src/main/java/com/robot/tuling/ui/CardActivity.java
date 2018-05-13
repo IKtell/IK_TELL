@@ -23,12 +23,15 @@ import com.robot.tuling.beans.CommonInfo;
 import com.robot.tuling.beans.MessageInfo;
 import com.robot.tuling.util.TimeUtil;
 
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
 import java.lang.reflect.Type;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 import java.util.List;
 
 import butterknife.BindView;
@@ -53,58 +56,49 @@ import okhttp3.Response;
 
 public class CardActivity extends AppCompatActivity {
 
-    @BindView(R.id.comment)
+    @BindView(R.id.comment_rv)
     RecyclerView recyclerView;
     MessageInfo messageInfo;
     CommentAdapter commentAdapter;
     boolean isInit = false;
     String newtime;
-    @BindView(R.id.toolbar)
-    Toolbar toolbar;
     @BindView(R.id.message_data)
     TextView messageData;
-    @BindView(R.id.divider)
-    View divider;
-    @BindView(R.id.comment_num)
-    TextView commentNum;
-    @BindView(R.id.like_num)
-    TextView likeNum;
-    @BindView(R.id.like)
-    ImageView like;
-
     @BindView(R.id.iv_send_msg)
     ImageView ivSendMsg;
-    @BindView(R.id.iv_send_box)
-    ImageView ivSendBox;
     @BindView(R.id.et_msg)
     EditText etMsg;
-    @BindView(R.id.ll_msg)
-    LinearLayout llMsg;
-    @BindView(R.id.rl_msg)
-    RelativeLayout rlMsg;
-    private static final String TAG = "CardActivity";
 
+    private static final String TAG = "CardActivity";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_card);
         ButterKnife.bind(this);
+//        ivSendMsg = (ImageView) findViewById(R.id.iv_send_msg);
+//        etMsg = (EditText) findViewById(R.id.et_msg);
         messageInfo = (MessageInfo) getIntent().getSerializableExtra("msgInfo");
+//        recyclerView = (RecyclerView)findViewById(R.id.comment_rv);
+//        messageData = (TextView) findViewById(R.id.message_data);
+        initRecyclerView();
+
     }
 
     @Override
     protected void onStart() {
 
         super.onStart();
-        ((TextView) findViewById(R.id.message_data)).setText(messageInfo.getData());
-        ((TextView) findViewById(R.id.like_num)).setText(messageInfo.getLikeNum());
-        ((TextView) findViewById(R.id.comment_num)).setText(messageInfo.getCommentNum());
+//        ((TextView) findViewById(R.id.message_data)).setText(messageInfo.getData());
+//        ((TextView) findViewById(R.id.like_num)).setText(messageInfo.getLikeNum());
+//        ((TextView) findViewById(R.id.comment_num)).setText(messageInfo.getCommentNum());
 
 
     }
 
     private void initRecyclerView() {
+        List<CommonInfo> commonInfos = new ArrayList<>();
+        commentAdapter = new CommentAdapter(commonInfos);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));
         recyclerView.setAdapter(commentAdapter);
         getData(null);
@@ -120,18 +114,21 @@ public class CardActivity extends AppCompatActivity {
                 try {
                     URL url;
                     if (date != null) {
-                        url = new URL("http://45.77.191.48:9292/card/comment/history?token=123&uuid=" + messageInfo.getUuid() + "&index=" + date);
+                        url = new URL("http://45.77.191.48:9292/card/comment/history?token=123&uuid=" + messageInfo.getUuid() + "&time=" + date.replaceAll(" ", "_"));
                     } else {
                         String time = TimeUtil.convertDate(System.currentTimeMillis());
-                        url = new URL("http://45.77.191.48:9292/card/comment/history?token=123&uuid=" + messageInfo.getUuid() + "&index=" + time);
+
+                        url = new URL("http://45.77.191.48:9292/card/comment/history?token=123&uuid=" + messageInfo.getUuid());
+                        //url = new URL("http://45.77.191.48:9292/card/comment/history?token=123&uuid=" + messageInfo.getUuid() + "&time=" + time.replaceAll(" ", "_"));
                     }
                     HttpURLConnection conn = (HttpURLConnection) url.openConnection();
                     conn.setRequestMethod("GET");
                     conn.connect();
                     InputStream is = conn.getInputStream();
-                    int c;
-                    while ((c = is.read()) != -1) {
-                        input.append((char) c);
+                    BufferedReader br = new BufferedReader(new InputStreamReader(is));
+                    String s;
+                    while((s = br.readLine()) != null) {
+                        input.append(s);
                     }
                     conn.disconnect();
                     Gson gson = new Gson();
@@ -143,7 +140,7 @@ public class CardActivity extends AppCompatActivity {
                         @Override
                         public void run() {
                             if (date == null) {
-                                commentAdapter = new CommentAdapter(commonInfos);
+                                //commentAdapter = new CommentAdapter(commonInfos);
                                 isInit = true;
                             } else {
                                 commentAdapter.addData(commonInfos);
@@ -166,8 +163,9 @@ public class CardActivity extends AppCompatActivity {
         CommonInfo commonInfo = new CommonInfo();
         commonInfo.isOwn = true;
         commonInfo.data = etMsg.getText().toString();
+        etMsg.setText("");
         commonInfo.time = TimeUtil.convertDate(System.currentTimeMillis());
-        asyncUpload(etMsg.getText().toString());
+        asyncUpload(commonInfo.data);
         commentAdapter.addData(commonInfo);
     }
 
@@ -175,7 +173,11 @@ public class CardActivity extends AppCompatActivity {
         Observable.create(new ObservableOnSubscribe<String>() {
             @Override
             public void subscribe(ObservableEmitter<String> e) throws Exception {
-                uploadImage("http://45.77.191.48:9292/card/comment/new", data, messageInfo.getUuid());
+//                addFormDataPart("token", "123")
+//                        .addFormDataPart("uuid", uuid)
+//                        .addFormDataPart("data", data)
+                uploadImage("http://45.77.191.48:9292/card/comment/new?token=123&uuid=" + messageInfo.getUuid() +
+                        "&data=" + data, data, messageInfo.getUuid());
                 e.onComplete();
             }
         })

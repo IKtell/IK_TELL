@@ -136,7 +136,8 @@ public class TimeUtil {
 
 
     public static String convertDate(long dates) {
-        long ldate = dates * 1000;
+        long ldate = dates ;
+        //SimpleDateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss");
         SimpleDateFormat sf = new SimpleDateFormat(TIME_FORMAT);
         return sf.format(new Date(ldate));
     }

@@ -1,5 +1,6 @@
 package com.robot.tuling.adapter;
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -11,12 +12,15 @@ import com.robot.tuling.R;
 import com.robot.tuling.base.BaseActivity;
 import com.robot.tuling.beans.MessageInfo;
 import com.robot.tuling.ui.CardActivity;
+import com.robot.tuling.ui.SendBoxActivity;
 
 import java.util.List;
 
 public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHolder> {
 
     private List<MessageInfo> mMessageInfoList;
+
+    Context context;
 
     static class ViewHolder extends RecyclerView.ViewHolder{
 
@@ -41,8 +45,9 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         }
     }
 
-    public MessageAdapter(List<MessageInfo> mMessageInfoList){
+    public MessageAdapter(List<MessageInfo> mMessageInfoList, Context context){
         this.mMessageInfoList = mMessageInfoList;
+        this.context = context;
 
     }
 
@@ -63,9 +68,10 @@ public class MessageAdapter extends RecyclerView.Adapter<MessageAdapter.ViewHold
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(BaseActivity.appContext, CardActivity.class);
+                Intent intent = new Intent(context, CardActivity.class);
                 intent.putExtra("msgInfo", mMessageInfoList.get(position));
-                BaseActivity.appContext.startActivity(intent);
+            //    BaseActivity.appContext.startActivity(intent);
+                context.startActivity(intent);
             }
         });
     }

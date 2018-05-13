@@ -23,7 +23,9 @@ import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.io.BufferedReader;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.text.ParseException;
@@ -83,7 +85,7 @@ public class SendBoxActivity extends AppCompatActivity {
         recyclerView = (RecyclerView) findViewById(R.id.recycler_view);
         LinearLayoutManager layoutManager = new LinearLayoutManager(this);
         recyclerView.setLayoutManager(layoutManager);
-        messageAdapter = new MessageAdapter(mMessageInfoList);
+        messageAdapter = new MessageAdapter(mMessageInfoList, this);
         recyclerView.setAdapter(messageAdapter);
         new UserReceiveTask("123", 0).execute();
     }
@@ -205,9 +207,10 @@ public class SendBoxActivity extends AppCompatActivity {
                 conn.setRequestMethod("GET");
                 conn.connect();
                 InputStream is = conn.getInputStream();
-                int c;
-                while((c = is.read()) != -1) {
-                    input.append((char) c);
+                BufferedReader br = new BufferedReader(new InputStreamReader(is));
+                String s;
+                while((s = br.readLine()) != null) {
+                    input.append(s);
                 }
                 conn.disconnect();
                 JSONArray cards = new JSONObject(input.toString()).getJSONArray("cards");
