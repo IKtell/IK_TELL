@@ -22,6 +22,4 @@ public class LoginLeftFragment extends Fragment {
         ButterKnife.bind(this, mView);
         return mView;
     }
-
-
 }

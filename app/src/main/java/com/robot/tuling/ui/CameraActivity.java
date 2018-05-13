@@ -50,6 +50,18 @@ public class CameraActivity extends BaseTalkActivity {
         mTalkAdapter = new TalkAdapter(getSupportFragmentManager(), mFragmentList);
         mViewPager.setAdapter(mTalkAdapter);
 
+        new Thread() {
+            @Override
+            public void run() {
+                try {
+                    sleep(1800);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+                mViewPager.setCurrentItem(1, true);
+            }
+        }.start();
+
     }
 
 }

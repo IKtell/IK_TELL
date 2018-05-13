@@ -139,7 +139,7 @@ public class MainActivity extends BaseActivity {
             etMsg.setText("");
 
             // 仅使用 Retrofit 请求接口
-//            requestApiByRetrofit(msg);
+            //requestApiByRetrofit(msg);
 
             // 使用 Retrofit 和 RxJava 请求接口
             requestApiByRetrofit_RxJava(msg);

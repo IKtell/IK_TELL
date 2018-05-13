@@ -15,12 +15,14 @@ public class BaseActivity extends AppCompatActivity {
 
     protected Context mContext;
     protected Activity mActivity;
+    public static Context appContext = null;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         mContext = this;
         mActivity = this;
+        if (appContext == null) appContext = this;
     }
 
     @Override

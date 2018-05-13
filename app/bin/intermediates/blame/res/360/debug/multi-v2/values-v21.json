@@ -1,67 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/incremental/merge360DebugResources/merged.dir/values-v21/values-v21.xml",
+            "outputFile": "D:\\AndroidStudioProjects\\IK_TELL\\app\\bin\\intermediates\\incremental\\merge360DebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/design-27.0.2.aar/7d8ad4102cff51c5971d7cf13db80587/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,5",
-                        "startColumns": "4,4",
-                        "startOffsets": "55,266",
-                        "endLines": "4,5",
-                        "endColumns": "12,96",
-                        "endOffsets": "261,358"
-                    },
-                    "to": {
-                        "startLines": "180,244",
-                        "startColumns": "4,4",
-                        "startOffsets": "13520,18070",
-                        "endLines": "182,244",
-                        "endColumns": "12,96",
-                        "endOffsets": "13726,18162"
-                    }
-                },
-                {
-                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/support-media-compat-27.0.2.aar/ca83efa0c13e88b5a91fb4cf2dbb032a/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2,5,8,11",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "55,223,386,554",
-                        "endLines": "4,7,10,13",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "218,381,549,716"
-                    },
-                    "to": {
-                        "startLines": "307,310,314,318",
-                        "startColumns": "4,4,4,4",
-                        "startOffsets": "22200,22368,22657,22953",
-                        "endLines": "309,312,316,320",
-                        "endColumns": "12,12,12,12",
-                        "endOffsets": "22363,22526,22820,23115"
-                    }
-                },
-                {
-                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/FirUpdater-1.0.7.aar/339f24d0d9a8a33adcca64dfd2bae10f/res/values-v21/values-v21.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "13",
-                        "endColumns": "12",
-                        "endOffsets": "782"
-                    },
-                    "to": {
-                        "startLines": "6",
-                        "startColumns": "4",
-                        "startOffsets": "354",
-                        "endLines": "17",
-                        "endColumns": "12",
-                        "endOffsets": "1081"
-                    }
-                },
-                {
-                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\ZDL\\.gradle\\caches\\transforms-1\\files-1.1\\core-0.9.4.4.aar\\dc46a9447035715d93b9381f33ced0df\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,13",
                         "startColumns": "4,4",
@@ -80,7 +23,26 @@
                     }
                 },
                 {
-                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/support-compat-27.0.2.aar/9b0f732a9f5dfc057ec49a73577cb530/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\ZDL\\.gradle\\caches\\transforms-1\\files-1.1\\FirUpdater-1.0.7.aar\\f26942b6b0049baac6b25577d58d872e\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "13",
+                        "endColumns": "12",
+                        "endOffsets": "782"
+                    },
+                    "to": {
+                        "startLines": "6",
+                        "startColumns": "4",
+                        "startOffsets": "354",
+                        "endLines": "17",
+                        "endColumns": "12",
+                        "endOffsets": "1081"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ZDL\\.gradle\\caches\\transforms-1\\files-1.1\\support-compat-27.0.2.aar\\5ddba4bd7eb546c5416e764a03b5df49\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -99,14 +61,14 @@
                     }
                 },
                 {
-                    "source": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/res/values-v21/styles.xml",
+                    "source": "D:\\AndroidStudioProjects\\IK_TELL\\app\\src\\main\\res\\values-v21\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
-                        "startOffsets": "17",
+                        "startOffsets": "19",
                         "endLines": "5",
                         "endColumns": "12",
-                        "endOffsets": "223"
+                        "endOffsets": "228"
                     },
                     "to": {
                         "startLines": "18",
@@ -118,7 +80,26 @@
                     }
                 },
                 {
-                    "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/res/values-v21/values-v21.xml",
+                    "source": "C:\\Users\\ZDL\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.0.2.aar\\9bac51d15cc6ad9d560ad5948d5a7f3b\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5,8,11",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "55,223,386,554",
+                        "endLines": "4,7,10,13",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "218,381,549,716"
+                    },
+                    "to": {
+                        "startLines": "307,310,314,318",
+                        "startColumns": "4,4,4,4",
+                        "startOffsets": "22200,22368,22657,22953",
+                        "endLines": "309,312,316,320",
+                        "endColumns": "12,12,12,12",
+                        "endOffsets": "22363,22526,22820,23115"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ZDL\\.gradle\\caches\\transforms-1\\files-1.1\\appcompat-v7-27.0.2.aar\\5b249856e2da4ca6512d626d9478fd7a\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,17,19,20,21,22,24,26,27,28,29,30,32,34,36,38,40,42,43,48,50,52,53,54,56,58,59,60,61,62,63,107,110,154,157,160,162,164,166,169,171,174,175,176,179,180,181,182,183,184,187,188,190,192,194,196,200,202,203,204,205,207,211,213,215,216,217,218,219,221,222,223,233,234,235,247",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
@@ -134,6 +115,25 @@
                         "endLines": "22,23,24,25,26,27,28,29,30,31,32,33,34,36,38,39,40,41,43,45,46,47,48,49,51,53,55,57,59,61,62,67,69,71,72,73,75,77,78,79,80,81,82,126,129,173,176,179,184,186,188,191,193,196,197,198,201,202,203,204,205,206,209,210,212,214,216,218,222,224,225,226,227,229,233,235,237,238,239,240,241,243,267,268,278,279,280,292,304",
                         "endColumns": "90,102,102,104,106,108,108,108,108,108,106,102,118,12,12,104,120,100,12,12,102,118,106,102,12,12,12,12,12,12,118,12,12,12,111,146,12,12,74,88,86,100,102,12,12,12,12,12,12,12,12,12,12,12,88,110,12,100,94,122,128,116,12,98,12,12,12,12,12,12,92,110,55,12,12,12,12,94,90,90,116,12,70,82,12,56,57,12,12",
                         "endOffsets": "1383,1486,1589,1694,1801,1910,2019,2128,2237,2346,2453,2556,2675,2830,2985,3090,3211,3312,3459,3600,3703,3822,3929,4032,4187,4358,4507,4672,4829,4980,5099,5471,5620,5769,5881,6028,6181,6328,6403,6492,6579,6680,6783,9851,10037,13117,13315,13515,13849,13972,14085,14268,14399,14600,14689,14800,15033,15134,15229,15352,15481,15598,15775,15874,16009,16152,16287,16406,16607,16726,16819,16930,16986,17093,17288,17399,17532,17627,17718,17809,17926,18065,19675,19758,20438,20495,20553,21247,21953"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\ZDL\\.gradle\\caches\\transforms-1\\files-1.1\\design-27.0.2.aar\\9139bcbffe166cc17502bb0d9c578caa\\res\\values-v21\\values-v21.xml",
+                    "from": {
+                        "startLines": "2,5",
+                        "startColumns": "4,4",
+                        "startOffsets": "55,266",
+                        "endLines": "4,5",
+                        "endColumns": "12,96",
+                        "endOffsets": "261,358"
+                    },
+                    "to": {
+                        "startLines": "180,244",
+                        "startColumns": "4,4",
+                        "startOffsets": "13520,18070",
+                        "endLines": "182,244",
+                        "endColumns": "12,96",
+                        "endOffsets": "13726,18162"
                     }
                 }
             ]
