@@ -40,7 +40,7 @@
                 android:layout_alignParentLeft="true"
                 android:layout_centerVertical="true"
                 android:layout_marginLeft="10dp"
-                android:src="@drawable/box2_white"/>
+                android:src="@drawable/box2_gray"/>
 
             <LinearLayout
                 android:id="@+id/ll_msg"

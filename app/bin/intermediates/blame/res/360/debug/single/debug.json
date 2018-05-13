@@ -1504,12 +1504,12 @@
         "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/res/drawable/abc_ic_go_search_api_material.xml"
     },
     {
-        "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/layout_activity_choose_role.xml.flat",
-        "source": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/res/layout/activity_choose_role.xml"
-    },
-    {
         "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/layout_select_dialog_item_material.xml.flat",
         "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/res/layout/select_dialog_item_material.xml"
+    },
+    {
+        "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/layout_activity_choose_role.xml.flat",
+        "source": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/res/layout/activity_choose_role.xml"
     },
     {
         "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/drawable-xxhdpi-v4_abc_cab_background_top_mtrl_alpha.9.png.flat",
@@ -1748,12 +1748,12 @@
         "source": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/res/drawable/slt_as_ios7_other_bt_top.xml"
     },
     {
-        "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/drawable-hdpi-v4_md_nav_back.png.flat",
-        "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/res/drawable-hdpi-v4/md_nav_back.png"
-    },
-    {
         "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/layout_item_message.xml.flat",
         "source": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/res/layout/item_message.xml"
+    },
+    {
+        "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/drawable-hdpi-v4_md_nav_back.png.flat",
+        "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/core-0.9.4.4.aar/c722e88053ef920b9c263ff1be2f705e/res/drawable-hdpi-v4/md_nav_back.png"
     },
     {
         "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/drawable-mdpi-v4_abc_text_select_handle_middle_mtrl_light.png.flat",
@@ -2198,6 +2198,10 @@
     {
         "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/color-v11_abc_background_cache_hint_selector_material_dark.xml.flat",
         "source": "/home/patrick/.gradle/caches/transforms-1/files-1.1/appcompat-v7-27.0.2.aar/a162000873f8ddf4bfc445ddcbe37ab0/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    },
+    {
+        "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/drawable_like_line.png.flat",
+        "source": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/src/main/res/drawable/like_line.png"
     },
     {
         "merged": "/media/patrick/Softwares/Android/LoveStudy-IQuestioning-master/app/Tuling/app/bin/intermediates/res/merged/360/debug/drawable-xhdpi-v4_abc_textfield_default_mtrl_alpha.9.png.flat",
